@@ -2,7 +2,7 @@ import openai
 import random
 
 def getFunFacts(sy_snum, pl_orbper, pl_rade, st_rad, st_mass):
-  openai.api_key = "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"
+  openai.api_key = "YOUR_API_KEY"
   response = openai.Completion.create(
       engine = "text-davinci-003",
       prompt = f"tell me 3 fun facts about a hypothetical planet with {sy_snum} stars, orbital period of {pl_orbper} days, {pl_rade} times earth radius, stellar radius of {st_rad} and stellar mass of {st_mass}.",
