@@ -32,7 +32,7 @@ def getDallEPrompt(pmass, prad, st_met):
     
 
 def getPlanetImage(texture, planet_color, star_color):
-    openai.api_key = "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"
+    openai.api_key = "YOUR_API_KEY"
     response = openai.Image.create(
       prompt=f"whole photo of {planet_color}, {texture} exoplanet",
       n=1,
